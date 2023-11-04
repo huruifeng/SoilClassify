@@ -1,0 +1,7 @@
+{
+  "name": "SoilClassify",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
