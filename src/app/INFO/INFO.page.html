@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      INFO
+      <h3>Contact and Introductions</h3>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,130 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="INFO page"></app-explore-container>
+  <ion-list>
+    <ion-list-header><h3>1. Contact Info</h3></ion-list-header>
+    <ion-card>
+      <ion-card-content>
+        <ion-item>
+          <ion-icon name="alert" item-left></ion-icon>
+            <div><b>Copyright &copy;:&nbsp;&nbsp;</b></div>
+            <div> Department of Civil and Architectural Engineering, Tennessee State University</div>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="people" item-left></ion-icon>
+          <div><b>Developer:&nbsp;&nbsp;</b></div>
+            <p>Dr Lin Li, Cindy Wu, Dr Ruifeng Hu</p>
+        </ion-item>
+        <ion-item>
+        <ion-icon name="mail" item-left></ion-icon>
+        <div><b>Question or comments:&nbsp;&nbsp;</b></div>
+          <p>lin818msn@hotmail.com</p>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header><h3>2. About and Usage</h3></ion-list-header>
+  </ion-list>
+  <ion-card>
+      <ion-card-content>
+          <ion-card-title>
+              Introduction of Soil Classify App
+          </ion-card-title>
+          <p>
+              The smart phone app is developed for soil classification. Geotechnical engineer (civil engineer) can use the app to classify the soil based on two soil classification systems AASHTO and USCS.
+          </p>
+      </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+      <ion-card-content>
+          <ion-card-title>
+              AASHTO System of Soil Classification
+          </ion-card-title>
+          <div>
+              According to AASHTO classification, soil is classified into seven major groups: A-1 through A-7. Soils classified under groups A-1, A-2, and A-3 are granular materials of which 35% or less of the particles pass through the No. 200 sieve. Soils of which more than 35% pass through the No. 200 sieve are classified under groups A-4, A-5, A-6, and A-7. These soils are mostly silt and clay-type materials.
+              <br>
+              To classify a soil according to AASHTO classification system, one must input the following information:
+              <ul style="font-family:'Times New Roman';">
+                  <li>Percentage of passing #10 sieve (2 mm opening), in percentage</li>
+                  <li>Percentage of passing #40 sieve (0.425 mm opening), in percentage</li>
+                  <li>Percentage of passing #200 sieve (0.0075 mm opening), in percentage</li>
+                  <li>PercentageLiquid limit LL,</li>
+                  <li>Plastic limit PL, or</li>
+                  <li>Plasticity index PI (PI = LL - PL)</li>
+              </ul>
+              Then, click "Submit" to get the soil classification. The group index (GI) will be calculated by the app and shown inside parentheses. 
+              <br><br>
+              <b style="background-color:yellowgreen;">Example:</b> Determine the AASHTO soil classification for the inorganic soil with following information:
+              <ul  style="font-family:'Times New Roman';">
+                  <li>Percentage of passing #10 sieve (2 mm opening) = 92%</li> 
+                  <li>Percentage of passing #40 sieve (0.425 mm opening) = 74%</li> 
+                  <li>Percentage of passing #200 sieve (0.0075 mm opening) = 54% (=F = %P200)</li> 
+                  <li>Liquid limit LL = 44</li> 
+                  <li>Plastic limit PL = 21</li> 
+              </ul> 
+              <b>Answer:  A-7-6 (9)</b>
+        </div> 
+      </ion-card-content>
+  </ion-card>
+ 
+  <ion-card>
+      <ion-card-content>
+          <ion-card-title>
+              Unified Soil Classification System (USCS)
+          </ion-card-title>
+          <div>
+              It is a soil classification system used in engineering and geology to describe the texture and grain size of a soil. The classification system can be applied to most unconsolidated materials, and is represented by a two-letter symbol. First and/or second letters include G (Gravel), S (Sand), M (Silt), C (Clay), and O (Organic).  The second letter include P (Poorly graded), W (Well-graded), H (High plasticity), and L (Low plasticity).
+              <br>
+              To classify a soil according to USCS classification system, one must input the following information:
+              <ul style="font-family:'Times New Roman';">
+                  <li>Percentage of passing #4 sieve (4.75 mm opening), in percentage</li>
+                  <li>Percentage of passing #200 sieve (0.0075 mm opening), in percentage</li>
+                  <li>Liquid limit LL</li>
+                  <li>Plastic limit PL, or</li>
+                  <li>Plasticity index PI (PI = LL - PL)</li>
+                  <li>C<sub>u</sub> = coefficient of uniformity = D<sub>60</sub>/D<sub>10</sub></li>
+                  <li>C<sub>c</sub> = coefficient of curvature = D<sub>30</sub><sup>2</sup> / D<sub>60</sub>D<sub>10</sub></li>
+                  <li>D<sub>10</sub> , in mm</li>
+                  <li>D<sub>30</sub> , in mm</li>
+                  <li>D<sub>60</sub> , in mm</li>
+              </ul>
+              Then, click "Submit" to get the soil classification. 
+              <br><br>
+              <b style="background-color:yellowgreen;">Example 1:</b> Determine the unified soil classification for the inorganic soil with following information:
+              <ul style="font-family:'Times New Roman';">
+                  <li>Percentage of passing #4 sieve (4.75 mm opening) = 100% (= No. 4 sieve input)</li>
+                  <li>Percentage of passing #200 sieve (0.0075 mm opening) = 4% (= No. 200 sieve input)</li>
+                  <li>D<sub>10</sub> = 0.1 mm</li>
+                  <li>D<sub>30</sub> = 0.17mm</li>
+                  <li>D<sub>60</sub> = 0.40 mm</li>
+              </ul>
+              <b>Answer: SP - poorly graded sand</b>
+              <br><br>
+              <b style="background-color:yellowgreen;">Example 2:</b> Determine the unified soil classification for the inorganic soil with following information:
+              <ul style="font-family:'Times New Roman';">
+                  <li>Percentage of passing #4 sieve (4.75 mm opening) = 97%</li>
+                  <li>Percentage of passing #200 sieve (0.0075 mm opening) = 54%</li>
+                  <li>Liquid limit LL = 44</li>
+                  <li>Plastic limit PL = 21  (where PI = plasticity index = LL - PL)</li>
+              </ul>
+              <b>Answer:  CL - sandy lean clay</b>
+              <br><br>
+              <b style="background-color:yellowgreen;">Example 3:</b> Determine the unified soil classification for the inorganic soil with following information:
+              <ul style="font-family:'Times New Roman';">
+                  <li>Percentage of passing #4 sieve (4.75 mm opening) = 80%</li>
+                  <li>Percentage of passing #200 sieve (0.0075 mm opening) = 10%</li>
+                  <li>Liquid limit LL = 30</li>
+                  <li>Plastic limit PL = 25</li>
+                  <li>D<sub>10</sub> = 0.075 mm</li>
+                  <li>D<sub>30</sub> = 0.39mm</li>
+                  <li>D<sub>60</sub> = 1.7mm</li>
+              </ul>
+              <b>Answer:  SW-SM - well graded sand with silt & gravel</b>
+          </div>
+      </ion-card-content>
+  </ion-card>
+        
 </ion-content>

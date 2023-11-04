@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AASHTOPage } from './AASHTO.page';
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { AASHTOPageRoutingModule } from './AASHTO-routing.module';
 
@@ -12,7 +11,6 @@ import { AASHTOPageRoutingModule } from './AASHTO-routing.module';
     IonicModule,
     CommonModule,
     FormsModule,
-    ExploreContainerComponentModule,
     AASHTOPageRoutingModule
   ],
   declarations: [AASHTOPage]

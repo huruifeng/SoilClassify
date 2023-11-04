@@ -13,5 +13,65 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="USCS page"></app-explore-container>
+    <ion-card>
+      <ion-card-header>
+          <h3>Please Input Paremater Values:</h3>
+      </ion-card-header>
+
+      <ion-list>
+          <ion-item>
+              <ion-label position="floating">No. 4 seive</ion-label>
+              <ion-input type="number" clearInput value="" [(ngModel)]="pss4"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating">No. 200 seive</ion-label>
+              <ion-input type="number" clearInput value="" [(ngModel)]="pss200"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating">Liquid limit</ion-label>
+              <ion-input type="number" clearInput value="" [(ngModel)]="LL"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating">Plastic limit</ion-label>
+              <ion-input type="number" clearInput value="" [(ngModel)]="PL"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating">Plasticity Index</ion-label>
+              <ion-input type="number" clearInput value="" [(ngModel)]="PI"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating"><i>Cu</i></ion-label>
+              <ion-input type="number" clearInput value="" [(ngModel)]="cu"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating"><i>Cc</i></ion-label>
+              <ion-input type="number" clearInput value="" [(ngModel)]="cc"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating">D<sub>10</sub></ion-label>
+              <ion-input type="number" clearInput value="" [(ngModel)]="d10"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating">D<sub>30</sub></ion-label>
+              <ion-input type="number" clearInput value="" [(ngModel)]="d30"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label position="floating">D<sub>60</sub></ion-label>
+              <ion-input type="number" clearInput value="" [(ngModel)]="d60"></ion-input>
+          </ion-item>
+      </ion-list>
+
+      <div class="center">
+          <p class="note">Note: If the parameters do not apply, leave them empty.</p>
+      </div>
+      <br>
+      <div class="center">
+          <p class="result" id="result_uscs"></p>
+      </div>
+      <div padding class="center">
+        <ion-button size="default" color="light" (click)="reset()">Reset</ion-button>
+        <ion-button size="default" color="primary" (click)="calc()">Submit</ion-button>
+      </div>
+
+    </ion-card>
 </ion-content>
