@@ -1,56 +1,136 @@
 {
-  "images": [
+  "images" : [
     {
-      "idiom": "universal",
-      "filename": "Default@1x~universal~anyany.png",
-      "scale": "1x"
+      "filename" : "Default@1x~universal~anyany.png",
+      "idiom" : "universal",
+      "scale" : "1x"
     },
     {
-      "idiom": "universal",
-      "filename": "Default@2x~universal~anyany.png",
-      "scale": "2x"
-    },
-    {
-      "idiom": "universal",
-      "filename": "Default@3x~universal~anyany.png",
-      "scale": "3x"
-    },
-    {
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
       ],
-      "idiom": "universal",
-      "scale": "1x",
-      "filename": "Default@1x~universal~anyany-dark.png"
+      "filename" : "Default@1x~universal~anyany 1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
     },
     {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "dark"
-        }
-      ],
-      "idiom": "universal",
-      "scale": "2x",
-      "filename": "Default@2x~universal~anyany-dark.png"
+      "filename" : "Default@2x~universal~anyany.png",
+      "idiom" : "universal",
+      "scale" : "2x"
     },
     {
-      "appearances": [
+      "appearances" : [
         {
-          "appearance": "luminosity",
-          "value": "dark"
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
       ],
-      "idiom": "universal",
-      "scale": "3x",
-      "filename": "Default@3x~universal~anyany-dark.png"
+      "filename" : "Default@2x~universal~anyany 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Default@3x~universal~anyany.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "Default@3x~universal~anyany 1.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "Default-640x1136.png",
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "Default-640x1136 1.png",
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Default-750x1334.png",
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "Default-750x1334 1.png",
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Default-1242x2208.png",
+      "idiom" : "iphone",
+      "scale" : "3x"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "Default-1242x2208 1.png",
+      "idiom" : "iphone",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "Default-768x1024.png",
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "Default-768x1024 1.png",
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Default-1536x2048 2.png",
+      "idiom" : "ipad",
+      "scale" : "2x"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "Default-1536x2048 3.png",
+      "idiom" : "ipad",
+      "scale" : "2x"
     }
   ],
-  "info": {
-    "version": 1,
-    "author": "xcode"
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
   }
 }
